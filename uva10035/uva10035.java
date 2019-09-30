@@ -18,8 +18,8 @@ public class Main{
         lastInt/=10;
       }
       System.out.println(count!=0?(count==1?(count +" carry operation."):(count +" carry operations.")):("No carry operation."));
-       firstInt=input.nextInt();
-    lastInt = input.nextInt();
+      firstInt=input.nextInt();
+      lastInt = input.nextInt();
     }
   }
 }
