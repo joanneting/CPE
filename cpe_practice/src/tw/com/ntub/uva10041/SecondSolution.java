@@ -1,5 +1,6 @@
+package tw.com.ntub.uva10041;
 import java.util.*;
-class Main {
+class SecondSolution {
   public static void main(String[] args) {
     Scanner input = new Scanner(System.in);
     int caseNumber=input.nextInt();
@@ -13,13 +14,8 @@ class Main {
         peopleArray[j]=input.nextInt();
       }
       int vito=0;
-      Arrays.sort(peopleArray);
-      
-      if(people%2==0){
-        vito=(peopleArray[people/2]+peopleArray[people/2-1])/2;
-      }else{
-        vito=peopleArray[people/2];
-      }
+      Arrays.sort(peopleArray);     
+      vito=peopleArray[people/2];
       for(int j=0;j<people;j++){
         total+=Math.abs(vito-peopleArray[j]);
       }

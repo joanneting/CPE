@@ -1,6 +1,7 @@
+package tw.com.ntub.uva10035;
 import java.util.Scanner;
 import java.lang.Math.*;
-public class Main{
+public class PrimaryArithmetic{
   public static void main(String[] arg){
     Scanner input = new Scanner(System.in);
     int firstInt=0;
