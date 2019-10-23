@@ -10,6 +10,13 @@ double 轉 int
 Double d = new Double(1.23);
 int i = d.intValue();
 */
+
+// uva10420
+Map<String,Integer> countryMap = new TreeMap<>();  // treeMap 預設升冪排序
+countryMap.containsKey(key) // 判斷是否有傳入的key
+for(Object key : countryMap.keySet()) {
+	System.out.println(key+" "+countryMap.get(key));
+}// 遍歷 map
 ```
 
 

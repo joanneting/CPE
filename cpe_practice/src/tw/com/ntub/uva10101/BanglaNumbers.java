@@ -5,17 +5,9 @@ import java.util.Scanner;
 public class BanglaNumbers {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
-		String[] stringArray = { "shata" /* 100 */, "hajar" /* (1,000) */, "lakh"/* (100,000) */,
-				"kuti" /* (10,000,000) */ };
-		int[] intArray = { 10, 100, 100, 100 };
-
 		int caseNumber = 1;
 		while (input.hasNextLong()) {
-			int count = 0;
 			long number = input.nextLong();
-
-			String[] stringNumber = new String[10];
-
 			if (caseNumber < 10) {
 				System.out.print("   " + caseNumber + ".");
 			} else if (caseNumber < 100) {
