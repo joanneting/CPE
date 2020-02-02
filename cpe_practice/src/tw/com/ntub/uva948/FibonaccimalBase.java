@@ -35,6 +35,7 @@ public class FibonaccimalBase {
 			}
 //			1 = 1 (fib)
 			System.out.println(fib+" (fib)");
+			caseNumber--;
 		}
 	}
 }
