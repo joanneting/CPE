@@ -18,21 +18,19 @@ public class AllYouNeedIsLove {
 			for(int i = s2.length-1;i >= 0; i--,pow*=2) {
 				s2Int += Integer.valueOf(s2[i])*pow; 
 			}
-			int min = 0;
-			if(s1Int > s2Int) {
-				min = s2Int;
-			}else {
-				min = s1Int;
-			}
+			
 //			Pair #1: All you need is love!
 //			Pair #2: Love is not all you need!
-			String result= "Pair #"+nowCase+": Love is not all you need!";
-			for(int i = 2; i <= min; i++) {
-				double d = i;
-				if(s1Int/d == s1Int/i && s2Int/d == s2Int/i ) {
-					result = "Pair #"+nowCase+": All you need is love!";
-					break;
-				}
+			String result= "Pair #"+nowCase;
+			while(s2Int!=0) {
+				int temp = s2Int;
+				s2Int = s1Int % s2Int;
+				s1Int = temp;
+			}
+			if(s1Int==1) {
+				result+=": Love is not all you need!";
+			}else {
+				result+=": All you need is love!";
 			}
 			System.out.println(result);
 			nowCase ++;

@@ -19,5 +19,6 @@ for(Object key : countryMap.keySet()) {
 }// 遍歷 map
 ```
 
-
+* uva10193
+	* 通過不停的將除數除以餘數得到公因數
 
