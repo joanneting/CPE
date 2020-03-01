@@ -22,3 +22,9 @@ for(Object key : countryMap.keySet()) {
 * uva10193
 	* 通過不停的將除數除以餘數得到公因數
 
+* uva10221
+	* 正弦定理
+		* ![](https://i.imgur.com/3sb4lrx.png)
+	* 弧度計算
+		* ![](https://i.imgur.com/nelGQI6.png)
+	* Math.sin(弧度)
